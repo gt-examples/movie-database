@@ -1,0 +1,23 @@
+{
+  "0667eff05251308b": "Drame",
+  "1b5199c2ab323ee0": "Date de sortie",
+  "2666264c8dae4d93": "Comédie",
+  "333fd15c415420c9": "Thriller",
+  "5aeb56733e524797": "Science-fiction",
+  "6ec1cce5074ea4a0": "Cette application de démonstration est construite avec gt-next. Les données sur les films sont approximatives et fournies à titre illustratif uniquement. Toutes les marques appartiennent à leurs propriétaires respectifs.",
+  "91644534327b031c": "Base de données de films",
+  "9fa3d9a532a3a7d0": "Box Office",
+  "a20d3f02eb857f6d": "Runtime",
+  "a247acd6383e2609": "Base de données de films | Traduction générique",
+  "add288cd0d42cd47": [
+    {
+      "i": 1,
+      "k": "_gt_n_1",
+      "v": "n"
+    },
+    " min"
+  ],
+  "b64fec3e81917bda": "Note",
+  "e8b770059d6bdb12": "Un catalogue de films multilingue avec des genres traduits, des notes, des recettes et des dates de sortie formatées en fonction de la langue.",
+  "ef72aa560b77e35a": "Action"
+}
