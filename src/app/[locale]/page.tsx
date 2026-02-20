@@ -1,10 +1,12 @@
-import { T, Var } from "gt-next";
+import { T } from "gt-next";
+import { tx } from "gt-next/server";
 import { movies } from "@/data/movies";
 import Header from "@/components/Header";
 import MovieCard from "@/components/MovieCard";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default async function Home() {
+  const featuredSynopsis = await tx(movies[0].synopsis);
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <Header />
@@ -24,7 +26,7 @@ export default function Home() {
             </p>
             <h2 className="text-2xl sm:text-3xl font-bold">{movies[0].title}</h2>
             <p className="text-sm text-neutral-300 mt-2 max-w-lg">
-              <T><Var>{movies[0].synopsis}</Var></T>
+              {featuredSynopsis}
             </p>
           </div>
         </div>

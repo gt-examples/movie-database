@@ -1,4 +1,5 @@
-import { T, Var, Num, Currency, DateTime } from "gt-next";
+import { T, Num, Currency, DateTime } from "gt-next";
+import { tx } from "gt-next/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { movies, getMovieById, getMoviesByGenre, genreColors } from "@/data/movies";
@@ -22,6 +23,8 @@ export default async function MoviePage({
   if (!movie) {
     notFound();
   }
+
+  const translatedSynopsis = await tx(movie.synopsis);
 
   const related = getMoviesByGenre(movie.genre)
     .filter((m) => m.id !== movie.id)
@@ -67,7 +70,7 @@ export default async function MoviePage({
           />
 
           <p className="text-neutral-300 leading-relaxed">
-            <T><Var>{movie.synopsis}</Var></T>
+            {translatedSynopsis}
           </p>
 
           {/* Stats Grid */}
