@@ -3,4 +3,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {};
 
-export default withGTConfig(nextConfig);
+export default withGTConfig(nextConfig, {
+  loadTranslationsPath: "./loadTranslations.ts",
+});
