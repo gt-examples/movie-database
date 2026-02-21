@@ -4,12 +4,14 @@ import { movies } from "@/data/movies";
 import Header from "@/components/Header";
 import MovieCard from "@/components/MovieCard";
 import Footer from "@/components/Footer";
+import Disclaimer from "@/components/Disclaimer";
 
 export default async function Home() {
   const featuredSynopsis = await tx(movies[0].synopsis);
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <Header />
+      <Disclaimer />
 
       {/* Featured Movie */}
       <section className="mb-10">

@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import MovieCard from "@/components/MovieCard";
 import GenreBadge from "@/components/GenreBadge";
 import Footer from "@/components/Footer";
+import Disclaimer from "@/components/Disclaimer";
 
 export function generateStaticParams() {
   return movies.map((movie) => ({ id: movie.id }));
@@ -33,6 +34,7 @@ export default async function MoviePage({
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <Header />
+      <Disclaimer />
 
       {/* Backdrop */}
       <div className="relative rounded-lg overflow-hidden mb-8">

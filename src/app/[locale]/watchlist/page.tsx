@@ -1,9 +1,11 @@
-import { T, Var, Num, Currency } from "gt-next";
+import { T, Num, Currency } from "gt-next";
+import { tx } from "gt-next/server";
 import Link from "next/link";
 import { movies, genreColors } from "@/data/movies";
 import Header from "@/components/Header";
 import GenreBadge from "@/components/GenreBadge";
 import Footer from "@/components/Footer";
+import Disclaimer from "@/components/Disclaimer";
 
 // Static curated watchlist for demo purposes
 const watchlistIds = [
@@ -16,10 +18,15 @@ const watchlistIds = [
 
 const watchlistMovies = movies.filter((m) => watchlistIds.includes(m.id));
 
-export default function WatchlistPage() {
+export default async function WatchlistPage() {
+  const translatedSynopses = await Promise.all(
+    watchlistMovies.map((movie) => tx(movie.synopsis))
+  );
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <Header />
+      <Disclaimer />
 
       <div className="mb-8">
         <h2 className="text-2xl font-bold">
@@ -62,14 +69,14 @@ export default function WatchlistPage() {
 
       {/* Watchlist Items */}
       <div className="space-y-4">
-        {watchlistMovies.map((movie, index) => (
+        {watchlistMovies.map((movie, i) => (
           <Link
             key={movie.id}
             href={`/movie/${movie.id}`}
             className="flex gap-4 bg-neutral-900 border border-neutral-800 rounded-lg p-4 hover:border-neutral-700 transition-colors group"
           >
             <span className="text-2xl font-bold text-neutral-700 w-8 shrink-0 flex items-center">
-              {index + 1}
+              {i + 1}
             </span>
             <img
               src={movie.poster}
@@ -95,7 +102,7 @@ export default function WatchlistPage() {
                 </span>
               </div>
               <p className="text-sm text-neutral-400 mt-2 line-clamp-2">
-                <T><Var>{movie.synopsis}</Var></T>
+                {translatedSynopses[i]}
               </p>
             </div>
           </Link>

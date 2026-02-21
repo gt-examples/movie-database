@@ -38,7 +38,7 @@ export async function generateMetadata({
       description,
     },
     alternates: {
-      canonical: "https://github.com/gt-examples/movie-database",
+      canonical: "https://movie-database.generaltranslation.dev",
       languages: {
         en: "/en",
         es: "/es",

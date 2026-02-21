@@ -7,20 +7,87 @@
   "2666264c8dae4d93": "Comedia",
   "29ebc1b119853fce": "Catálogo",
   "333fd15c415420c9": "Thriller",
-  "3e7d90d5893ea02f": "Elenco",
+  "3e7d90d5893ea02f": "Reparto",
   "401f9005a50e0c7f": "Géneros",
-  "462fc7621e901829": "Películas",
-  "5aeb56733e524797": "Ciencia ficción",
-  "6ec1cce5074ea4a0": "Esta es una aplicación de demostración creada con gt-next. Los datos de películas son aproximados y tienen fines meramente ilustrativos. Todas las marcas registradas pertenecen a sus respectivos propietarios.",
-  "91644534327b031c": "Base de datos de películas",
-  "933fa7740fe8c681": {
+  "4371327d5ee972ee": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " películas"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " películas"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " películas"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " película"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
     "i": 1,
-    "k": "_gt_value_1",
-    "v": "v"
+    "t": "Plural"
   },
+  "462fc7621e901829": "Películas",
+  "5aeb56733e524797": "Sci-Fi",
+  "6ec1cce5074ea4a0": "Esta es una aplicación de demostración creada con gt-next. Los datos de películas son aproximados y tienen fines meramente ilustrativos. Todas las marcas comerciales pertenecen a sus respectivos propietarios.",
+  "6f13c2058dc0f987": [
+    "Esta es una aplicación de demostración creada con ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " para mostrar el soporte multilingüe con gt-next. Ver el código fuente en ",
+    {
+      "c": "GitHub",
+      "i": 2,
+      "t": "a"
+    },
+    "."
+  ],
+  "91644534327b031c": "Base de datos de películas",
   "9e4c720bcd85ef2e": "Puntuación media",
   "9fa3d9a532a3a7d0": "Taquilla",
-  "a20d3f02eb857f6d": "En tiempo de ejecución",
+  "a20d3f02eb857f6d": "Runtime",
   "a247acd6383e2609": "Base de datos de películas | Traducción general",
   "a6c3f623396f3789": "Todas las películas",
   "add288cd0d42cd47": [
@@ -31,11 +98,11 @@
     },
     " min"
   ],
-  "b1b147906cff72fd": "Una selección cuidadosa de películas imprescindibles",
+  "b1b147906cff72fd": "Una selección curada de películas imprescindibles",
   "b64fec3e81917bda": "Calificación",
   "d9643ee53c5eeca9": "Dirigido por",
   "ddc7fd5775e9c8c8": "Más en este género",
-  "e8b770059d6bdb12": "Un catálogo multilingüe de películas con géneros traducidos, calificaciones, ingresos de taquilla y fechas de estreno formateadas según la configuración regional.",
+  "e8b770059d6bdb12": "Un catálogo de películas multilingüe con géneros traducidos, puntuaciones, ingresos y fechas de estreno formateadas según la configuración regional.",
   "eb821729e93b493a": "Explorar por género",
   "ef72aa560b77e35a": "Acción",
   "efdf6bed546f1d66": "Destacado"

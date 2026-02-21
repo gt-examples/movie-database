@@ -3,24 +3,91 @@
   "0667eff05251308b": "Drame",
   "1b5199c2ab323ee0": "Date de sortie",
   "1dac47378ad21c63": "Box-office combiné",
-  "24d143a44341ff05": "Durée totale d'exécution",
+  "24d143a44341ff05": "Durée d'exécution totale",
   "2666264c8dae4d93": "Comédie",
   "29ebc1b119853fce": "Catalogue",
   "333fd15c415420c9": "Thriller",
   "3e7d90d5893ea02f": "Distribution",
   "401f9005a50e0c7f": "Genres",
+  "4371327d5ee972ee": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " films"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " films"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " films"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " film"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
   "462fc7621e901829": "Films",
   "5aeb56733e524797": "Science-fiction",
-  "6ec1cce5074ea4a0": "Ceci est une application de démonstration construite avec gt-next. Les données sur les films sont approximatives et fournies à titre illustratif uniquement. Toutes les marques appartiennent à leurs propriétaires respectifs.",
+  "6ec1cce5074ea4a0": "Cette application de démonstration est construite avec gt-next. Les données sur les films sont approximatives et fournies à titre illustratif uniquement. Toutes les marques appartiennent à leurs propriétaires respectifs.",
+  "6f13c2058dc0f987": [
+    "Cette application de démonstration est construite avec ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    " pour illustrer la prise en charge multilingue avec gt-next. Consultez le code source sur ",
+    {
+      "c": "GitHub",
+      "i": 2,
+      "t": "a"
+    },
+    "."
+  ],
   "91644534327b031c": "Base de données de films",
-  "933fa7740fe8c681": {
-    "i": 1,
-    "k": "_gt_value_1",
-    "v": "v"
-  },
   "9e4c720bcd85ef2e": "Note moy.",
   "9fa3d9a532a3a7d0": "Box Office",
-  "a20d3f02eb857f6d": "Exécution",
+  "a20d3f02eb857f6d": "Runtime",
   "a247acd6383e2609": "Base de données de films | Traduction générale",
   "a6c3f623396f3789": "Tous les films",
   "add288cd0d42cd47": [
@@ -32,10 +99,10 @@
     " min"
   ],
   "b1b147906cff72fd": "Une sélection incontournable de films à voir absolument",
-  "b64fec3e81917bda": "Évaluation",
-  "d9643ee53c5eeca9": "Dirigé par",
+  "b64fec3e81917bda": "Note",
+  "d9643ee53c5eeca9": "Réalisé par",
   "ddc7fd5775e9c8c8": "Plus dans ce genre",
-  "e8b770059d6bdb12": "Un catalogue de films multilingue, avec les genres traduits, les notes, les recettes et les dates de sortie formatés en fonction de la langue.",
+  "e8b770059d6bdb12": "Un catalogue de films multilingue avec des genres traduits, ainsi que des notes, des recettes et des dates de sortie adaptées aux paramètres régionaux.",
   "eb821729e93b493a": "Parcourir par genre",
   "ef72aa560b77e35a": "Action",
   "efdf6bed546f1d66": "À la une"

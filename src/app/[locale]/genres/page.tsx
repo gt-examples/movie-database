@@ -1,14 +1,16 @@
-import { T } from "gt-next";
+import { T, Num, Plural } from "gt-next";
 import Link from "next/link";
 import { genres, genreColors, getMoviesByGenre } from "@/data/movies";
 import Header from "@/components/Header";
 import GenreBadge from "@/components/GenreBadge";
 import Footer from "@/components/Footer";
+import Disclaimer from "@/components/Disclaimer";
 
 export default function GenresPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <Header />
+      <Disclaimer />
 
       <h2 className="text-2xl font-bold mb-8">
         <T>Browse by Genre</T>
@@ -25,7 +27,13 @@ export default function GenresPage() {
                   className={`text-sm px-3 py-1 rounded-full font-medium ${genreColors[genre]}`}
                 />
                 <span className="text-sm text-neutral-500">
-                  {genreMovies.length} {genreMovies.length === 1 ? "" : ""}
+                  <T>
+                    <Plural
+                      n={genreMovies.length}
+                      singular={<><Num>{genreMovies.length}</Num> film</>}
+                      plural={<><Num>{genreMovies.length}</Num> films</>}
+                    />
+                  </T>
                 </span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
